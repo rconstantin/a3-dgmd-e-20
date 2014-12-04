@@ -1,0 +1,609 @@
+/* customize page */
+images {
+  width: 100%;
+  max-width: 100%;
+}
+#mainIndex .ui-grid-a .ui-block-a {
+    width: 30%;
+    margin-right: 10%;
+}
+#mainIndex .ui-grid-a .ui-block-b {
+    width: 54%;
+}
+#mainIndex1 .ui-grid-c .ui-block-a,
+#mainIndex1 .ui-grid-c .ui-block-b,
+#mainIndex1 .ui-grid-c .ui-block-c,
+#mainIndex1 .ui-grid-c .ui-block-d {
+      width: 49%;
+      padding-right: 1%;
+}
+
+#mainIndex3 .ui-grid-a .ui-block-b {
+      width: 49%;
+      padding-left: 1%;
+}
+
+#mainIndex4 .ui-grid-a .ui-block-a {
+      width: 40%;
+      padding-right: 1%;
+      padding-top: 6%;
+}
+
+#mainIndex4 .ui-grid-a .ui-block-b {
+      width: 59%;
+
+}
+
+.custom-corners .ui-bar {
+  -webkit-border-top-left-radius: inherit;
+  border-top-left-radius: inherit;
+  -webkit-border-top-right-radius: inherit;
+  border-top-right-radius: inherit;
+}
+.custom-corners .ui-body {
+      border-top-width: 0;
+      -webkit-border-bottom-left-radius: inherit;
+      border-bottom-left-radius: inherit;
+      -webkit-border-bottom-right-radius: inherit;
+      border-bottom-right-radius: inherit;
+}
+#mainIndex4 .popphoto {
+      width: 30%;
+}
+@media all and (max-width:720px) {
+      #mainIndex .ui-grid-a .ui-block-a {
+            width: 50%;
+            margin-left: 25%;
+      }
+      #mainIndex .ui-grid-a .ui-block-b {
+            width: 75%;
+            margin-left: 10%;
+      }
+      #mainIndex4 .popphoto {
+            width: 48%;
+      }
+}
+
+@media all and (max-width:420px) {
+      #mainIndex1 .ui-grid-c .ui-block-a, 
+      #mainIndex1 .ui-grid-c .ui-block-b,
+      #mainIndex1 .ui-grid-c .ui-block-c,
+      #mainIndex1 .ui-grid-c .ui-block-d {
+            width: 90%;
+            margin-left: 5%;
+      }
+      #mainIndex3 .ui-grid-a .ui-block-a {
+            width: 80%;
+            margin-left: 10%;
+      }
+      #mainIndex3 .ui-grid-a .ui-block-b {
+            width: 98%;
+            margin-left: 1%;
+            margin-top: 2%;
+      }
+      #mainIndex4 .ui-grid-a .ui-block-a {
+            width: 80%;
+            margin-left: 10%;
+      }
+      #mainIndex4 .ui-grid-a .ui-block-b {
+            width: 98%;
+            margin-left: 1%;
+            margin-top: 2%;
+      }
+}
+
+.label-success {
+    color: white;
+    background-color: lightblue;
+    font-size: small;
+}
+
+.label-warning {
+    color: white;
+    background-color: orange;
+    font-size: small;
+}
+
+.label-danger {
+    color: white;
+    font-size: x-small;
+    background-color: red;
+}
+
+#collection1, #collection2,  #collection3, #collection4, #collection5, #collection6 {
+      width: 600px;
+      height: 488px;
+      background-repeat: no-repeat;
+}
+
+@media all and (max-width:420px) {
+  #collection1 , #collection2 , #collection3, #collection4, #collection5, #collection6 {
+      display: block;
+      width: 400px;
+      height: 340px;
+    }
+}
+.mfp-no-margins img.mfp-img {
+      padding: 0;
+    }
+    /* position of shadow behind the image */
+    .mfp-no-margins .mfp-figure:after {
+      top: 0;
+      bottom: 0;
+    }
+    /* padding for main container */
+    .mfp-no-margins .mfp-container {
+      padding: 0;
+    }
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.zero {
+  background-image: url(../images/0.jpg);
+  border: 1px;
+}
+.one {
+  background-image: url(../images/1.jpg);
+  border: 1px;
+}
+.one_0 {
+  background-image: url(../images/10.jpg);
+  border: 1px;
+}
+.one_1 {
+  background-image: url(../images/11.jpg);
+  border: 1px;
+}
+.one_2 {
+  background-image: url(../images/12.jpg);
+  border: 1px;
+}
+.one_3 {
+  background-image: url(../images/13.jpg);
+  border: 1px;
+}
+.one_4 {
+  background-image: url(../images/14.jpg);
+  border: 1px;
+}
+.one_5 {
+  background-image: url(../images/15.jpg);
+  border: 1px;
+}
+.one_6 {
+  background-image: url(../images/16.jpg);
+  border: 1px;
+}
+.one_7 {
+  background-image: url(../images/17.jpg);
+  border: 1px;
+}
+.one_8 {
+  background-image: url(../images/18.jpg);
+  border: 1px;
+}
+.one_9 {
+  background-image: url(../images/19.jpg);
+  border: 1px;
+}
+.two {
+  background-image: url(../images/2.jpg);
+  border: 1px;
+}
+
+.two_0 {
+  background-image: url(../images/20.jpg);
+  border: 1px;
+}
+.two_0 {
+  background-image: url(../images/20.jpg);
+  border: 1px;
+}
+.two_1 {
+  background-image: url(../images/21.jpg);
+  border: 1px;
+}
+.two_2 {
+  background-image: url(../images/22.jpg);
+  border: 1px;
+}
+.two_3 {
+  background-image: url(../images/23.jpg);
+  border: 1px;
+}
+.two_4 {
+  background-image: url(../images/24.jpg);
+  border: 1px;
+}
+.two_5 {
+  background-image: url(../images/25.jpg);
+  border: 1px;
+}
+.two_6 {
+  background-image: url(../images/26.jpg);
+  border: 1px;
+}
+.two_7 {
+  background-image: url(../images/27.jpg);
+  border: 1px;
+}
+.two_8 {
+  background-image: url(../images/28.jpg);
+  border: 1px;
+}
+.two_9 {
+  background-image: url(../images/29.jpg);
+  border: 1px;
+}
+
+
+.three {
+  background-image: url(../images/3.jpg);
+  border: 1px;
+}
+
+.three_0 {
+  background-image: url(../images/30.jpg);
+  border: 1px;
+}
+.three_1 {
+  background-image: url(../images/31.jpg);
+  border: 1px;
+}
+.three_2 {
+  background-image: url(../images/32.jpg);
+  border: 1px;
+}
+.three_3 {
+  background-image: url(../images/33.jpg);
+  border: 1px;
+}
+.three_4 {
+  background-image: url(../images/34.jpg);
+  border: 1px;
+}
+.three_5 {
+  background-image: url(../images/35.jpg);
+  border: 1px;
+}
+.three_6 {
+  background-image: url(../images/36.jpg);
+  border: 1px;
+}
+.three_7 {
+  background-image: url(../images/37.jpg);
+  border: 1px;
+}
+.three_8 {
+  background-image: url(../images/38.jpg);
+  border: 1px;
+}
+.three_9 {
+  background-image: url(../images/39.jpg);
+  border: 1px;
+}
+
+.four {
+  background-image: url(../images/4.jpg);
+  border: 1px;
+}
+.four_0 {
+  background-image: url(../images/40.jpg);
+  border: 1px;
+}
+.four_1 {
+  background-image: url(../images/41.jpg);
+  border: 1px;
+}
+.four_2 {
+  background-image: url(../images/42.jpg);
+  border: 1px;
+}
+.four_3 {
+  background-image: url(../images/43.jpg);
+  border: 1px;
+}
+.four_4 {
+  background-image: url(../images/44.jpg);
+  border: 1px;
+}
+.four_5 {
+  background-image: url(../images/45.jpg);
+  border: 1px;
+}
+.four_6 {
+  background-image: url(../images/46.jpg);
+  border: 1px;
+}
+.four_7 {
+  background-image: url(../images/47.jpg);
+  border: 1px;
+}
+.four_8 {
+  background-image: url(../images/48.jpg);
+  border: 1px;
+}
+.four_9 {
+  background-image: url(../images/49.jpg);
+  border: 1px;
+}
+.four_91 {
+  background-image: url(../images/491.jpg);
+  border: 1px;
+}
+.four_911 {
+  background-image: url(../images/4911.jpg);
+  border: 1px;
+}
+.four_92 {
+  background-image: url(../images/492.jpg);
+  border: 1px;
+}
+
+.four_93 {
+  background-image: url(../images/493.jpg);
+  border: 1px;
+}
+.four_94 {
+  background-image: url(../images/494.jpg);
+  border: 1px;
+}
+.four_95 {
+  background-image: url(../images/495.jpg);
+  border: 1px;
+}
+.five {
+  background-image: url(../images/5.jpg);
+  border: 1px;
+}
+.five_0 {
+  background-image: url(../images/50.jpg);
+  border: 1px;
+}
+.five_1 {
+  background-image: url(../images/51.jpg);
+  border: 1px;
+}
+.five_2 {
+  background-image: url(../images/52.jpg);
+  border: 1px;
+}
+.five_3 {
+  background-image: url(../images/53.jpg);
+  border: 1px;
+}
+.five_4 {
+  background-image: url(../images/54.jpg);
+  border: 1px;
+}
+.five_5 {
+  background-image: url(../images/55.jpg);
+  border: 1px;
+}
+.five_6 {
+  background-image: url(../images/56.jpg);
+  border: 1px;
+}
+.five_7 {
+  background-image: url(../images/57.jpg);
+  border: 1px;
+}
+.five_8 {
+  background-image: url(../images/58.jpg);
+  border: 1px;
+}
+.five_9 {
+  background-image: url(../images/59.jpg);
+  border: 1px;
+}
+
+
+.six {
+  background-image: url(../images/6.jpg);
+  border: 1px;
+}
+.seven {
+  background-image: url(../images/7.jpg);
+  border: 1px;
+}
+.eight {
+  background-image: url(../images/8.jpg);
+  border: 1px;
+}
+
+@media all and (max-width:420px) {
+      .zero {
+        background-image: url(../images/small/0.jpg);
+        border: 1px;
+      }
+      .one {
+        background-image: url(../images/small/1.jpg);
+        border: 1px;
+      }
+      .two {
+        background-image: url(../images/small/2.jpg);
+        border: 1px;
+      }
+      .three {
+        background-image: url(../images/small/3.jpg);
+        border: 1px;
+      }
+      .four {
+        background-image: url(../images/small/4.jpg);
+        border: 1px;
+      }
+      .five {
+        background-image: url(../images/small/5.jpg);
+        border: 1px;
+      }
+      .six {
+        background-image: url(../images/small/6.jpg);
+        border: 1px;
+      }
+      .seven {
+        background-image: url(../images/small/7.jpg);
+        border: 1px;
+      }
+      .eight {
+        background-image: url(../images/small/8.jpg);
+        border: 1px;
+      }
+
+      .three_0 {
+        background-image: url(../images/small/30.jpg);
+        border: 1px;
+      }
+      .three_1 {
+        background-image: url(../images/small/31.jpg);
+        border: 1px;
+      }
+      .three_2 {
+        background-image: url(../images/small/32.jpg);
+        border: 1px;
+      }
+      .three_3 {
+        background-image: url(../images/small/33.jpg);
+        border: 1px;
+      }
+      .three_4 {
+        background-image: url(../images/small/34.jpg);
+        border: 1px;
+      }
+      .three_5 {
+        background-image: url(../images/small/35.jpg);
+        border: 1px;
+      }
+      .three_6 {
+        background-image: url(../images/small/36.jpg);
+        border: 1px;
+      }
+      .three_7 {
+        background-image: url(../images/small/37.jpg);
+        border: 1px;
+      }
+      .three_8 {
+        background-image: url(../images/small/38.jpg);
+        border: 1px;
+      }
+      .three_9 {
+        background-image: url(../images/small/39.jpg);
+        border: 1px;
+      }
+      .four {
+        background-image: url(../images/small/4.jpg);
+        border: 1px;
+      }
+      .four_0 {
+        background-image: url(../images/small/40.jpg);
+        border: 1px;
+      }
+      .four_1 {
+        background-image: url(../images/small/41.jpg);
+        border: 1px;
+      }
+      .four_2 {
+        background-image: url(../images/small/42.jpg);
+        border: 1px;
+      }
+      .four_3 {
+        background-image: url(../images/small/43.jpg);
+        border: 1px;
+      }
+      .four_4 {
+        background-image: url(../images/small/44.jpg);
+        border: 1px;
+      }
+      .four_5 {
+        background-image: url(../images/small/45.jpg);
+        border: 1px;
+      }
+      .four_6 {
+        background-image: url(../images/small/46.jpg);
+        border: 1px;
+      }
+      .four_7 {
+        background-image: url(../images/small/47.jpg);
+        border: 1px;
+      }
+      .four_8 {
+        background-image: url(../images/small/48.jpg);
+        border: 1px;
+      }
+      .four_9 {
+        background-image: url(../images/small/49.jpg);
+        border: 1px;
+      }
+      .four_91 {
+        background-image: url(../images/small/491.jpg);
+        border: 1px;
+      }
+      .four_911 {
+        background-image: url(../images/small/4911.jpg);
+        border: 1px;
+      }
+      .four_92 {
+        background-image: url(../images/small/492.jpg);
+        border: 1px;
+      }
+
+      .four_93 {
+        background-image: url(../images/small/493.jpg);
+        border: 1px;
+      }
+      .four_94 {
+        background-image: url(../images/small/494.jpg);
+        border: 1px;
+      }
+      .four_95 {
+        background-image: url(../images/small/495.jpg);
+        border: 1px;
+      }
+      .five {
+        background-image: url(../images/small/5.jpg);
+        border: 1px;
+      }
+      .five_0 {
+        background-image: url(../images/small/50.jpg);
+        border: 1px;
+      }
+      .five_1 {
+        background-image: url(../images/small/51.jpg);
+        border: 1px;
+      }
+      .five_2 {
+        background-image: url(../images/small/52.jpg);
+        border: 1px;
+      }
+      .five_3 {
+        background-image: url(../images/small/53.jpg);
+        border: 1px;
+      }
+      .five_4 {
+        background-image: url(../images/small/54.jpg);
+        border: 1px;
+      }
+      .five_5 {
+        background-image: url(../images/small/55.jpg);
+        border: 1px;
+      }
+      .five_6 {
+        background-image: url(../images/small/56.jpg);
+        border: 1px;
+      }
+      .five_7 {
+        background-image: url(../images/small/57.jpg);
+        border: 1px;
+      }
+      .five_8 {
+        background-image: url(../images/small/58.jpg);
+        border: 1px;
+      }
+      .five_9 {
+        background-image: url(../images/small/59.jpg);
+        border: 1px;
+}
+
+}
