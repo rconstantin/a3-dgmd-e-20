@@ -18,23 +18,31 @@ $(document).ready(function() {
             $('#logo-img').replaceWith('<p> Background: this photo was taken in the spring of 2012 by a very talented photographer at our local community beach.</p>');
             $('#logo-btn').replaceWith('<p> You clicked Me!!! </p>');
       }); // end of logo-btn click
-
+      /* experimental full screen display
+      $( "#collection1" ).on({
+            popupbeforeposition: function() {
+                  var h = $( window ).height();
+                  var w = $( window ).width();
+                  $( "#collection1" ).css( 'height', h );
+                  $( "#collection1" ).css('width', w);
+            }
+      });*/
       function swipeMe(id,img) {
             // swipe left
             $(id).bind('swipeleft', function(event) {
-          
+                  var prev = counter;
                   if (counter == img.length - 1)  {
                         counter = 0;  
                   }
                   else {
                         counter++;
                   }
-                  $(id).removeClass().addClass(img[counter]);
+                  $(id).removeClass(img[prev]).addClass(img[counter]);
                   
             });
             // swipe right
             $(id).bind('swiperight', function(event) {
-            
+                  var prev = counter;
                   if (counter == 0) {
                       counter = img.length - 1;
                   }
@@ -42,7 +50,7 @@ $(document).ready(function() {
                       counter--;
                   }
                   
-                  $(id).removeClass().addClass(img[counter]);    
+                  $(id).removeClass(img[prev]).addClass(img[counter]);    
              
             });
       }
