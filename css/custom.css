@@ -1,3 +1,16 @@
+canvas {
+      width: 97%;
+      height: auto;
+      border: 1px dotted black;
+      background-color: lightblue;
+}
+video {
+      width: 40%;
+      height: auto;
+}
+.center {
+    margin-left: 25%;
+}
 /* customize page */
 images {
   min-width: 100%;
@@ -18,7 +31,8 @@ images {
       padding-right: 1%;
 }
 
-#mainIndex3 .ui-grid-a .ui-block-b {
+#mainIndex3 .ui-grid-a .ui-block-b,
+.ui-grid-a .ui-block-b  {
       width: 49%;
       padding-left: 1%;
 }
@@ -649,6 +663,4 @@ img {
       .five_9 {
         background-image: url(../images/small/59.jpg);
         border: 1px;
-}
-
 }

@@ -1,6 +1,6 @@
 $(document).ready(function(){
       var j = 1;
-      var x = 370, y = 270;
+      var x = 180, y = 130;
       var shape = 'rect';
       function doKeyDown(evt) {
             switch (evt.keyCode) {
@@ -28,9 +28,9 @@ $(document).ready(function(){
                    // layer: true,
                   //  name: 'box1',
                     strokeStyle: '#966',
-                    strokeWidth: 5,
+                    strokeWidth: 2,
                     x: a, y: b,
-                    radius: 50,
+                    radius: 20,
                     fillStyle:'#f44',
                     // start and end angles in degrees
                     start: 0, end: 360
@@ -40,22 +40,22 @@ $(document).ready(function(){
         $('#canvas').drawRect({
                   fillStyle: '#fc9',
                   strokeStyle: '#963',
-                  strokeWidth: 5,
+                  strokeWidth: 2,
                   x: a,
                   y: b,
-                  width: 100,
-                  height: 100
+                  width: 10,
+                  height: 10
             });
       }
       function drawRect(a,b) {
         $('#canvas').drawRect({
                   fillStyle: '#fc9',
                   strokeStyle: '#963',
-                  strokeWidth: 5,
+                  strokeWidth: 2,
                   x: a,
                   y: b,
-                  width: 100,
-                  height: 60
+                  width: 10,
+                  height: 6
             });
       }
       function drawPolygon(a,b) {
@@ -63,7 +63,7 @@ $(document).ready(function(){
                   fillStyle: '#589',
                   strokeStyle: '#000',
                   x: a, y: b,
-                  radius: 50,
+                  radius: 10,
                   sides: 6,
                   rotate: 25
             });
@@ -92,9 +92,9 @@ $(document).ready(function(){
                     layer: true,
                     name: 'box1',
                     strokeStyle: '#966',
-                    strokeWidth: 5,
-                    x: 370, y: 270,
-                    radius: 50,
+                    strokeWidth: 2,
+                    x: 180, y: 130,
+                    radius: 20,
                     fillStyle:'#f44',
                     // start and end angles in degrees
                     start: 0, end: 360
@@ -104,19 +104,19 @@ $(document).ready(function(){
                   name: 'box',
                   fillStyle: '#fc9',
                   strokeStyle: '#963',
-                  strokeWidth: 5,
-                  x: 100,
-                  y: 60,
-                  width: 100,
-                  height: 60
+                  strokeWidth: 2,
+                  x: 20,
+                  y: 20,
+                  width: 30,
+                  height: 15
             });
             $('#canvas').drawPolygon({
                   layer: true,
                   name: 'box2',
                   fillStyle: '#589',
                   strokeStyle: '#000',
-                  x: 650, y: 60,
-                  radius: 50,
+                  x: 320, y: 20,
+                  radius: 20,
                   sides: 6,
                   rotate: 25
             });
@@ -125,15 +125,15 @@ $(document).ready(function(){
                    y:250}, 2500).animateLayer('box1',
                   {x:370, 
                    y:20}, 2500).animateLayer('box2',
-                  {x:320, 
-                   y:370}, 2500);
+                  {x:180, 
+                   y:130}, 2500);
             $('#canvas').animateLayer('box',
-                  {x:100, 
-                   y:60}, 2500).clearCanvas().animateLayer('box1',
-                    {x:370, 
-                     y:270}, 2500).clearCanvas().animateLayer('box2',
-                    {x:650, 
-                     y:60}, 2500).clearCanvas();
+                  {x:20, 
+                   y:20}, 2500).clearCanvas().animateLayer('box1',
+                    {x:180, 
+                     y:130}, 2500).clearCanvas().animateLayer('box2',
+                    {x:320, 
+                     y:20}, 2500).clearCanvas();
 
       }); // end click button1
       $('#canvas').hover(function(){
