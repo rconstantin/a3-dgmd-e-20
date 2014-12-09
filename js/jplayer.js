@@ -6,7 +6,7 @@ $(document).ready(function(){
                   ogv: "assets/enzo_piano.ogv",
                   m4v: "assets/enzo_piano.m4v",
                   mp4: "assets/enzo_piano.mp4",
-                  poster: "http://www.jplayer.org/video/poster/Big_Buck_Bunny_Trailer_480x270.png"
+                  poster: "assets/enzo_piano.jpg"
                   });
             },
             cssSelectorAncestor: "#jp_container_1",
@@ -31,7 +31,7 @@ $(document).ready(function(){
         cssSelectorAncestor: "#jp_container_2",
         swfPath: "/js",
         supplied: "mp3,m4a, oga",
-        useStateClassSkin: true,
+        useStateClassSkin: false,
         autoBlur: false,
         smoothPlayBar: true,
         keyEnabled: true,
