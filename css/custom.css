@@ -11,6 +11,10 @@ images {
   min-width: 100%;
   max-height: 100%;
 }
+.pretty {
+    color: red;
+    font-size: bold;
+}
 #mainIndex .ui-grid-a .ui-block-a {
     width: 30%;
     margin-right: 10%;
