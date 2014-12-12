@@ -15,6 +15,7 @@ images {
     color: red;
     font-size: bold;
 }
+
 #mainIndex .ui-grid-a .ui-block-a {
     width: 30%;
     margin-right: 10%;
@@ -75,9 +76,23 @@ images {
       #mainIndex4 .popphoto {
             width: 48%;
       }
+      .ui-grid-b .ui-block-a, .ui-grid-b .ui-block-c {
+          font-size: x-small;
+      }
+      .ui-grid-b .ui-block-a, .ui-grid-b .ui-block-c, footer {
+          font-size: 50%;
+      }
 }
 
 @media all and (max-width:420px) {
+      .ui-grid-d .ui-block-a, 
+      .ui-grid-d .ui-block-b,
+      .ui-grid-d .ui-block-c,
+      .ui-grid-d .ui-block-d,
+      .ui-grid-d .ui-block-e  {
+            width: 33%;
+      }
+      
       #mainIndex1 .ui-grid-c .ui-block-a, 
       #mainIndex1 .ui-grid-c .ui-block-b,
       #mainIndex1 .ui-grid-c .ui-block-c,
@@ -103,11 +118,14 @@ images {
             margin-left: 1%;
             margin-top: 2%;
       }
+      .ui-grid-b .ui-block-a, .ui-grid-b .ui-block-c, footer {
+          font-size: 40%;
+      }
 }
 
 .label-success {
     color: white;
-    background-color: lightblue;
+    background-color: blue;
     font-size: small;
 }
 

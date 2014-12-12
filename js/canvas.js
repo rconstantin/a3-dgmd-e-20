@@ -1,38 +1,40 @@
 $(document).ready(function(){
-      var j = 1;
-      var x = 230, y = 180;
+      var j = 1, i = 0;
+      var kd_x = 230, kd_y = 180;
       var shape = 'rect';
       function doKeyDown(evt) {
             evt.preventDefault();
             switch (evt.keyCode) {
                   case 38: // up arrow
-                        y -= 10;
+                        kd_y -= 10;
                         break;
                   case 40: // down arrow
-                        y += 10;
+                        kd_y += 10;
                         break;
                   case 39: // right arrow       
-                        x += 10;
+                        kd_x += 10;
                         break;
                   case 37: // left arrow
-                        x -= 10;
+                        kd_x -= 10;
                         break;
                   default: // ignore any other keys for now
                         break;     
             }
-
+            draw(i++);
       } // end of function doKeyDown
+
+      function doClicked(evt) {
+            evt.preventDefault();
+            kd_x = evt.pageX - $("#canvas").offset().left;
+            kd_y = evt.pageY - $("#canvas").offset().top;
+            draw(i++);
+      } // end of doClicked()
       
-      $('#canvas').bind('touchmove',function(e){
-            e.preventDefault();
-            var touch = e.originalEvent.touches[0] || e.originalEvent.changedTouches[0];
-            //CODE GOES HERE
-            console.log(touch.pageY+' '+touch.pageX);
-      });
       function drawCircle(a,b,layer) {
             $('#canvas').drawArc({
                     layer: true,
                     name: layer,
+                    dragabble : true,
                     strokeStyle: '#966',
                     strokeWidth: 2,
                     x: a, y: b,
@@ -51,8 +53,8 @@ $(document).ready(function(){
                   strokeWidth: 2,
                   x: a,
                   y: b,
-                  width: 10,
-                  height: 10
+                  width: 40,
+                  height: 40
             });
       }
       function drawRect(a,b,layer) {
@@ -65,8 +67,8 @@ $(document).ready(function(){
                   strokeWidth: 2,
                   x: a,
                   y: b,
-                  width: 25,
-                  height: 15
+                  width: 40,
+                  height: 25
             });
       }
       function drawPolygon(a,b,layer) {
@@ -77,7 +79,7 @@ $(document).ready(function(){
                   name:layer,
                   strokeStyle: '#000',
                   x: a, y: b,
-                  radius: 10,
+                  radius: 20,
                   sides: 6,
                   rotate: 25
             });
@@ -86,20 +88,19 @@ $(document).ready(function(){
             return setInterval(draw, 300);
       }
       
-      function draw() {
+      function draw(i) {
             
             switch ($('#shape').val()) {
                   case 'circle':
-                      drawCircle(x,y);
+                      drawCircle(kd_x,kd_y,'box_circle'+ i);
                       break;
                   case 'square':
-                      drawSquare(x,y);
+                      drawSquare(kd_x,kd_y,'box_square' + i);
                       break;
                   case 'polygon':
-                      drawPolygon(x,y);
+                      drawPolygon(kd_x,kd_y,'box_poly' + i);
                       break;
                   default:
-                      //drawRect(x,y);
                       break;
             }
       }
@@ -143,7 +144,8 @@ $(document).ready(function(){
             $('#canvas').removeLayer('box1').removeLayer('box2').removeLayer('box3').removeLayer('box4');
       });//end of clear click
 
-      init();
+      //init();
       window.addEventListener('keydown',doKeyDown,true);
+      window.addEventListener('click',doClicked,true);
 
 }); //end ready

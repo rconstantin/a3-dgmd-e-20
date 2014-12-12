@@ -18,15 +18,7 @@ $(document).ready(function() {
             $('#logo-img').replaceWith('<p> Background: this photo was taken in the spring of 2012 by a very talented photographer at our local community beach.</p>');
             $('#logo-btn').replaceWith('<p> You clicked Me!!! </p>');
       }); // end of logo-btn click
-      /* experimental full screen display
-      $( "#collection1" ).on({
-            popupbeforeposition: function() {
-                  var h = $( window ).height();
-                  var w = $( window ).width();
-                  $( "#collection1" ).css( 'height', h );
-                  $( "#collection1" ).css('width', w);
-            }
-      });*/
+      
       function swipeMe(id,img) {
             // swipe left
             $(id).bind('swipeleft', function(event) {
@@ -66,6 +58,28 @@ $(document).ready(function() {
       swipeMe('#collection5',images4);
 
       swipeMe('#collection6',images5);
-      
+
+      // Create the dropdown base
+
+      //$("<select />").appendTo("nav");
+
+      // Create default option "Go to..."
+      //$("<option />", {
+      //   "selected": "selected",
+      //   "value"   : "",
+      //   "text"    : "menu"
+      //}).appendTo("nav select");
+
+      // Populate dropdown with menu items
+      //$("#first_nav").each(function() {
+       //var el = $(this);
+       //$("<option />", {
+       //    "value"   : el.attr("href"),
+       //    "text"    : el.text()
+       //}).appendTo("nav select");
+      //});
+      $("nav select").change(function() {
+            window.location = $(this).find("option:selected").val();
+      });
 }); // end doc ready
 
