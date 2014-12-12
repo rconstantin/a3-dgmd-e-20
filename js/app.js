@@ -8,7 +8,7 @@ var images5 = ['five_0','five_1','five_2','five_3','five_4','five_5','five_6','f
 
 
 $(document).ready(function() {
-      $('#logo-btn').click(function(){
+      $('#logo-btn').tap(function(){
             $('#family-img').attr({
                   'src': 'images/family1.jpg',
                   //'class': 'ui-block-b'
@@ -78,8 +78,8 @@ $(document).ready(function() {
        //    "text"    : el.text()
        //}).appendTo("nav select");
       //});
-      $("nav select").change(function() {
-            window.location = $(this).find("option:selected").val();
-      });
+      //$("nav select").change(function() {
+      //      window.location = $(this).find("option:selected").val();
+      //});
 }); // end doc ready
 
