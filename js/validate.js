@@ -99,9 +99,9 @@
             } // end if (email length)
           
             if (error == 0) {
-                  //$('#myModal').modal();
                   alert('Submit input validated but nothing going to server for now!');
                   $('.form-horizontal')[0].reset();
+                  noLens();
                   
             }
             submit.preventDefault(); // to prevent submit from going to the server
@@ -110,6 +110,7 @@
 
       $('.resetInput').tap(function(){ // used to reset input on successful submit.
             $('.form-horizontal')[0].reset();
+            noLens();
       });
 
       function selectFavNikonLens() {
