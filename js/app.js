@@ -59,27 +59,9 @@ $(document).ready(function() {
 
       swipeMe('#collection6',images5);
 
-      // Create the dropdown base
-
-      //$("<select />").appendTo("nav");
-
-      // Create default option "Go to..."
-      //$("<option />", {
-      //   "selected": "selected",
-      //   "value"   : "",
-      //   "text"    : "menu"
-      //}).appendTo("nav select");
-
-      // Populate dropdown with menu items
-      //$("#first_nav").each(function() {
-       //var el = $(this);
-       //$("<option />", {
-       //    "value"   : el.attr("href"),
-       //    "text"    : el.text()
-       //}).appendTo("nav select");
-      //});
-      //$("nav select").change(function() {
-      //      window.location = $(this).find("option:selected").val();
-      //});
+      // This is needed to update the selected value in select list
+      $("nav select").change(function() {
+            window.location = $(this).find("option:selected").val();
+      });
 }); // end doc ready
 
