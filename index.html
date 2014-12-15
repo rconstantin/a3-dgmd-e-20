@@ -22,13 +22,26 @@
                         <h1>Digital Photographer</h1>
                   </div>
                   <nav data-role="navbar">
-                        <ul>
-                              <li><a href="#home" class="ui-btn-active">Home</a></li>
-                              <li><a href="#collections">Collections</a></li>
-                              <li><a href="#projects">Projects</a></li>
-                              <li><a href="#about" >About</a></li>  
-                              <li ><a href="#contact" >Contact Us</a></li>  
-                        </ul>
+                        <div class="normal">
+                              <ul>
+                                    <li><a href="#home" class="ui-btn-active ui-state-persist">Home</a></li>
+                                    <li><a href="#collections">Collections</a></li>
+                                    <li><a href="#projects">Projects</a></li>
+                                    <li><a href="#about" >About Us</a></li>  
+                                    <li ><a href="#contact" >Contact Us</a></li>  
+                              </ul>
+                        </div>
+                        
+                        <div data-role="fieldcontain" class="tiny">
+                              <label for="select-choice-1" class="select">Menu...</label>
+                              <select name="select-choice-1" id="select-choice-1">
+                                    <option value="#home" selected>Home</option>
+                                    <option value="#collections">Collections</option>
+                                    <option value="#projects">Projects</option>
+                                    <option value="#about">About Us</option>
+                                    <option value="#contact">Contact Us</option>
+                              </select>
+                        </div>
                   </nav>
             </header>
             <section id="mainIndex" data-role="content" class="ui-content">
@@ -64,13 +77,27 @@
                         <h1>Digital Photographer</h1>
                   </div>
                   <nav data-role="navbar">
-                        <ul>
-                              <li><a href="#home" >Home</a></li>
-                              <li><a href="#collections" class="ui-btn-active">Collections</a></li>
-                              <li><a href="#projects">Projects</a></li>
-                              <li><a href="#about" >About</a></li>  
-                              <li ><a href="#contact" >Contact Us</a></li>  
-                        </ul>
+                        <div class="normal">
+                              <ul>
+                                    <li><a href="#home" >Home</a></li>
+                                    <li><a href="#collections" class="ui-btn-active ui-state-persist">Collections</a></li>
+                                    <li><a href="#projects">Projects</a></li>
+                                    <li><a href="#about" >About Us</a></li>  
+                                    <li ><a href="#contact" >Contact Us</a></li>  
+                              </ul>
+                        </div>
+                        <div class="tiny">
+                              <div data-role="fieldcontain" class="tiny">
+                                    <label for="select-choice-2" class="select ui-state-persist">Menu...</label>
+                                    <select name="select-choice-2" id="select-choice-2">
+                                         <option value="#home">Home</option>
+                                          <option value="#collections" selected>Collections</option>
+                                          <option value="#projects">Projects</option>
+                                          <option value="#about">About Us</option>
+                                          <option value="#contact">Contact Us</option>
+                                    </select>
+                              </div>
+                        </div>
                   </nav>
             </header>
             <section id="mainIndex1" data-role="content" class="ui-content">
@@ -203,13 +230,27 @@
                         <h1>Digital Photographer</h1>
                   </div>
                   <nav data-role="navbar">
-                        <ul>
-                              <li><a href="#home">Home</a></li>
-                              <li><a href="#collections">Collections</a></li>
-                              <li><a href="#projects">Projects</a></li>
-                              <li><a href="#about" >About</a></li>  
-                              <li ><a href="#contact"  class="ui-btn-active">Contact Us</a></li>  
-                        </ul>
+                        <div class="normal">
+                              <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#collections">Collections</a></li>
+                                    <li><a href="#projects">Projects</a></li>
+                                    <li><a href="#about" >About</a></li>  
+                                    <li ><a href="#contact"  class="ui-btn-active ui-state-persist">Contact Us</a></li>  
+                              </ul>
+                        </div>
+                        <div class="tiny">
+                              <div data-role="fieldcontain" class="tiny">
+                                    <label for="select-choice-3" class="select ui-state-persist">Menu...</label>
+                                    <select name="select-choice-3" id="select-choice-3">
+                                          <option value="#home">Home</option>
+                                          <option value="#collections">Collections</option>
+                                          <option value="#projects">Projects</option>
+                                          <option value="#about">About Us</option>
+                                          <option value="#contact" selected>Contact Us</option>
+                                    </select>
+                              </div>
+                        </div>
                   </nav>
             </header>
             <section id="mainIndex2" data-role="content" class="ui-content">
@@ -234,7 +275,7 @@
                         <fieldset id="favcam" class="ui-field-contain" data-role="controlgroup" data-type="horizontal" data-mini="true">
                               <legend>Brand of Camera you shoot</legend>
                               <label for="nikon">
-                                  <input type="radio" lass="ui-shadow ui-btn ui-corner-all ui-icon-camera ui-btn-icon-right" name="camera" value="nikon" id="nikon" > Nikon
+                                  <input type="radio" class="ui-shadow ui-btn ui-corner-all ui-icon-camera ui-btn-icon-right" name="camera" value="nikon" id="nikon" > Nikon
                               </label>
                               <label for="canon">
                                   <input type="radio" name="camera" value="canon" id="canon"> Canon
@@ -280,23 +321,25 @@
                         <h1>Digital Photographer</h1>
                   </div>
                   <nav data-role="navbar">
-                        <ul>
-                              <li><a href="#home">Home</a></li>
-                              <li><a href="#collections">Collections</a></li>
-                              <li><a href="#projects">Projects</a></li>
-                              <li><a href="#about"  class="ui-btn-active">About Us</a></li>  
-                              <li ><a href="#contact">Contact Us</a></li>  
-                        </ul>
-                        <!--
-                        <select> 
-                              <option value="" selected="selected">Menu</option> 
-                              <option value="#home">Home</option> 
-                              <option value="#collections">Collections</option> 
-                              <option value="#projects">Projects</option> 
-                              <option value="#about">About Us</option> 
-                              <option value="#contact">Contact Us</option> 
-                        </select>
-                      -->
+                        <div class="normal">
+                              <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#collections">Collections</a></li>
+                                    <li><a href="#projects">Projects</a></li>
+                                    <li><a href="#about"  class="ui-btn-active  ui-state-persist">About Us</a></li>  
+                                    <li ><a href="#contact">Contact Us</a></li>  
+                              </ul>
+                        </div>
+                        <div data-role="fieldcontain" class="tiny">
+                              <label for="select-choice-4" class="select ui-state-persist">Menu...</label>
+                              <select name="select-choice-4" id="select-choice-4">
+                                    <option value="#home">Home</option>
+                                    <option value="#collections" >Collections</option>
+                                    <option value="#projects">Projects</option>
+                                    <option value="#about" selected>About Us</option>
+                                    <option value="#contact">Contact Us</option>
+                              </select>
+                        </div>
                   </nav>
             </header>
             <section id="mainIndex3" data-role="content" class="ui-content">
@@ -367,13 +410,25 @@
                         <h1>Digital Photographer</h1>
                   </div>
                   <nav data-role="navbar">
-                        <ul>
-                              <li><a href="#home">Home</a></li>
-                              <li><a href="#collections">Collections</a></li>
-                              <li><a href="#projects" class="ui-btn-active">Projects</a></li>
-                              <li><a href="#about" >About Us</a></li>  
-                              <li ><a href="#contact">Contact Us</a></li>  
-                        </ul>
+                        <div class="normal">
+                              <ul>
+                                    <li><a href="#home">Home</a></li>
+                                    <li><a href="#collections">Collections</a></li>
+                                    <li><a href="#projects" class="ui-btn-active ui-state-persist">Projects</a></li>
+                                    <li><a href="#about" >About Us</a></li>  
+                                    <li ><a href="#contact">Contact Us</a></li>  
+                              </ul>
+                        </div>
+                        <div data-role="fieldcontain" class="tiny">
+                              <label for="select-choice-5" class="select ui-state-persist">Menu...</label>
+                              <select name="select-choice-5" id="select-choice-5">
+                                    <option value="#home">Home</option>
+                                    <option value="#collections" >Collections</option>
+                                    <option value="#projects" selected>Projects</option>
+                                    <option value="#about" >About Us</option>
+                                    <option value="#contact">Contact Us</option>
+                              </select>
+                        </div>
                   </nav>
             </header>
             <section id="mainIndex4" data-role="content" class="ui-content">

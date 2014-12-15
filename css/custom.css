@@ -18,7 +18,12 @@ images {
     text-align: center;
     margin-top: -10%;
 }
-
+.tiny {
+    display: none;
+}
+.normal {
+    display: block;
+}
 #mainIndex .ui-grid-a .ui-block-a {
     width: 30%;
     margin-right: 10%;
@@ -80,6 +85,12 @@ images {
 }
 
 @media all and (max-width:420px) {
+      .tiny {
+            display: block;
+      }
+      .normal {
+            display: none;
+      }
       #mainIndex .ui-grid-a .ui-block-a {
             width: 95%;
             margin-left: 2%;
@@ -165,16 +176,16 @@ images {
 }
 .mfp-no-margins img.mfp-img {
       padding: 0;
-    }
-    /* position of shadow behind the image */
-    .mfp-no-margins .mfp-figure:after {
+}
+/* position of shadow behind the image */
+.mfp-no-margins .mfp-figure:after {
       top: 0;
       bottom: 0;
-    }
-    /* padding for main container */
-    .mfp-no-margins .mfp-container {
+}
+/* padding for main container */
+.mfp-no-margins .mfp-container {
       padding: 0;
-    }
+}
 
 img {
     width: 100%;
