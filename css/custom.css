@@ -68,15 +68,6 @@ images {
       width: 30%;
 }
 @media all and (max-width:720px) {
-      #mainIndex .ui-grid-a .ui-block-a {
-            width: 95%;
-            margin-left: 2%;
-            margin-bottom: 2%;
-      }
-      #mainIndex .ui-grid-a .ui-block-b {
-            width: 75%;
-            margin-left: 10%;
-      }
       #mainIndex4 .popphoto {
             width: 48%;
       }
@@ -89,6 +80,15 @@ images {
 }
 
 @media all and (max-width:420px) {
+      #mainIndex .ui-grid-a .ui-block-a {
+            width: 95%;
+            margin-left: 2%;
+            margin-bottom: 2%;
+      }
+      #mainIndex .ui-grid-a .ui-block-b {
+            width: 75%;
+            margin-left: 10%;
+      }
       .pretty {
           margin: 0 auto;
           text-align: center;
